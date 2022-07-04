@@ -1,0 +1,88 @@
+/* Start Founder */
+.founder {
+  .image {
+    position: relative;
+    &::before {
+      content: url("./../../../images/before.png");
+      position: absolute;
+      top: -49px;
+      left: -57px;
+      z-index: -1;
+    }
+    &::after {
+      content: url("./../../../images/after.png");
+      position: absolute;
+      bottom: -35px;
+      left: -20px;
+      z-index: -1;
+    }
+  }
+}
+/* End Founder */
+/* Start Why We */
+.why-we {
+  padding-bottom: 100px;
+  .future {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    ul {
+      li {
+        line-height: 2;
+        padding: 5px 0;
+        text-align: right;
+        &::before {
+          content: "\f560";
+          font-family: "Font Awesome 6 Brands";
+          font-weight: 900;
+          background-color: $main-color;
+          padding: 2px;
+          border-radius: 50%;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* End Why We */
+/* Start Contact Us */
+.contact-us {
+  background-image: url("./../../../images/contact-us.png");
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $main-color, $alpha: 0.35);
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+    padding: 30px 0;
+  }
+  form {
+    padding: 5px 15px;
+    width: 60%;
+    border-radius: 10px;
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      background-color: #f8f8f8;
+      &:focus {
+        outline: none;
+      }
+    }
+    label {
+      margin-bottom: 15px;
+    }
+  }
+}
+/* End Contact Us */

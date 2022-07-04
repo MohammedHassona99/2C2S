@@ -1,0 +1,149 @@
+/* Start Nav */
+nav {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+nav .navbar-brand {
+  padding: 5px 0;
+}
+nav .navbar-brand img {
+  height: 90px;
+}
+nav .dropdown-toggle::after {
+  display: none;
+}
+nav .nav-link {
+  color: black;
+}
+nav .nav-link.active, nav .nav-link:hover {
+  color: #662d90;
+}
+
+header {
+  height: calc(100vh - 100px);
+  background-image: url("./../../../images/header-img.png");
+  background-size: cover;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(102, 45, 144, 0.48);
+}
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* End Nav */
+/* Start Founder */
+.founder .image {
+  position: relative;
+}
+.founder .image::before {
+  content: url("./../../../images/before.png");
+  position: absolute;
+  top: -49px;
+  left: -57px;
+  z-index: -1;
+}
+.founder .image::after {
+  content: url("./../../../images/after.png");
+  position: absolute;
+  bottom: -35px;
+  left: -20px;
+  z-index: -1;
+}
+
+/* End Founder */
+/* Start Why We */
+.why-we {
+  padding-bottom: 100px;
+}
+.why-we .future {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.why-we .future ul li {
+  line-height: 2;
+  padding: 5px 0;
+  text-align: right;
+}
+.why-we .future ul li::before {
+  content: "\f560";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+  background-color: #662d90;
+  padding: 2px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* End Why We */
+/* Start Contact Us */
+.contact-us {
+  background-image: url("./../../../images/contact-us.png");
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+}
+.contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(102, 45, 144, 0.35);
+}
+.contact-us .container {
+  position: relative;
+  z-index: 2;
+  padding: 30px 0;
+}
+.contact-us form {
+  padding: 5px 15px;
+  width: 60%;
+  border-radius: 10px;
+}
+.contact-us form input[type=text],
+.contact-us form input[type=email],
+.contact-us form textarea {
+  background-color: #f8f8f8;
+}
+.contact-us form input[type=text]:focus,
+.contact-us form input[type=email]:focus,
+.contact-us form textarea:focus {
+  outline: none;
+}
+.contact-us form label {
+  margin-bottom: 15px;
+}
+
+/* End Contact Us */
+/* Start Global */
+body {
+  font-family: GraublauWeb;
+}
+
+@font-face {
+  font-family: GraublauWeb;
+  src: url("./../../../fonts/GE-Flow-Regular.otf") format("opentype");
+}
+.color-main {
+  color: #662d90;
+}
+
+.bg-main {
+  background-color: #662d90;
+}
+
+/* End Global *//*# sourceMappingURL=app.css.map */

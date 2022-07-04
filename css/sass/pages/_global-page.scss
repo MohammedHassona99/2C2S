@@ -1,0 +1,15 @@
+/* Start Global */
+body {
+  font-family: GraublauWeb;
+}
+@font-face {
+  font-family: GraublauWeb;
+  src: url("./../../../fonts/GE-Flow-Regular.otf") format("opentype");
+}
+.color-main {
+  color: $main-color;
+}
+.bg-main {
+  background-color: $main-color;
+}
+/* End Global */
