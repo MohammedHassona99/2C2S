@@ -70,7 +70,6 @@
   }
   form {
     padding: 5px 15px;
-
     border-radius: 10px;
     input[type="text"],
     input[type="email"],
@@ -80,6 +79,9 @@
         outline: none;
       }
       resize: none;
+    }
+    textarea {
+      height: 180px;
     }
     label {
       margin-bottom: 15px;
