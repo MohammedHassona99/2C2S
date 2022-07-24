@@ -2,20 +2,22 @@
 .founder {
   .image {
     position: relative;
-    &::before {
-      content: url("./../../../images/before.png");
-      position: absolute;
-      top: -49px;
-      left: -57px;
-      z-index: -1;
-    }
-    &::after {
-      content: url("./../../../images/after.png");
-      position: absolute;
-      bottom: -35px;
-      left: -20px;
-      z-index: -1;
-    }
+    // &::before {
+    //   content: url("./../../../images/before.png");
+    //   position: absolute;
+    //   top: -49px;
+    //   left: -57px;
+    //   z-index: -1;
+    //   overflow: hidden;
+    // }
+    // &::after {
+    //   content: url("./../../../images/after.png");
+    //   position: absolute;
+    //   bottom: -35px;
+    //   left: -20px;
+    //   z-index: -1;
+    //   overflow: hidden;
+    // }
   }
 }
 /* End Founder */
@@ -27,18 +29,17 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 20px;
-
     ul {
       li {
         line-height: 2;
         padding: 5px 0;
         text-align: right;
-        &::before {
-          content: "\f560";
-          font-family: "Font Awesome 6 Brands";
-          font-weight: 900;
+        display: flex;
+        svg,
+        i {
+          color: white;
           background-color: $main-color;
-          padding: 2px;
+          padding: 4px;
           border-radius: 50%;
           margin-left: 5px;
         }
@@ -66,11 +67,10 @@
   .container {
     position: relative;
     z-index: 2;
-    padding: 30px 0;
   }
   form {
     padding: 5px 15px;
-    width: 60%;
+
     border-radius: 10px;
     input[type="text"],
     input[type="email"],
